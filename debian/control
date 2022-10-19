@@ -1,0 +1,35 @@
+Source: uget
+Section: net
+Priority: optional
+Maintainer: Elías Alejandro Año Mendoza <ealmdz@gmail.com>
+Build-Depends:
+ debhelper-compat (= 13),
+ intltool,
+ libnotify-dev,
+ libgstreamer1.0-dev,
+ libgtk-3-dev,
+ libssl-dev,
+ libcurl4-openssl-dev
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Homepage: https://ugetdm.com/
+Vcs-Git: https://salsa.debian.org/elias/uget.git
+Vcs-Browser: https://salsa.debian.org/elias/uget
+
+Package: uget
+Architecture: any
+Depends: ${shlibs:Depends},
+ ${misc:Depends}
+Description: easy-to-use download manager written in GTK+
+ Uget (formerly urlgfe) is a simple, lightweight and easy-to-use
+ download manager.
+ It provides the following features:
+  * Resume downloads.
+  * Queue downloads.
+  * Classify downloads in categories.
+  * Mozilla Firefox integration (through Flashgot plugin).
+  * Clipboard monitoring.
+  * Import downloads import from HTML files.
+  * Batch download.
+ .
+ It also can be launched from the command line.
